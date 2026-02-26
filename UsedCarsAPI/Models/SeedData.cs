@@ -6,7 +6,6 @@ namespace UsedCarsAPI.Models
     {
         public static void SeedDatabase(UsedCarsDb16Context context)
         {
-            // В проекте нет миграций, поэтому используем EnsureCreated
             context.Database.EnsureCreated();
             if (!context.Persons.Any())
             {
