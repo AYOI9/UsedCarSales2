@@ -1,0 +1,14 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:vm="clr-namespace:UsedCarsClient.ViewModels"
+                    xmlns:view="clr-namespace:UsedCarsClient.Views">
+    <DataTemplate DataType="{x:Type vm:HomeViewModel}">
+        <view:HomeView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:ClientsViewModel}">
+        <view:ClientsView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:ContractsViewModel}">
+        <view:ContractsView/>
+    </DataTemplate>
+</ResourceDictionary>
